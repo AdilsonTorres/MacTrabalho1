@@ -2,13 +2,13 @@ package Pokemon;
 
 public class Dragao extends Pokemon
 {
-	private String ataque1 = "exemplo1";
-	private String ataque2 = "exemplo2";
-	private String ataque3 = "exemplo3";
+	private String ataque1 = "Bola de fogo";
+	private String ataque2 = "Cauda cortante";
+	private String ataque3 = "Mordida";
 	
-	private int dano1 = 1;
-	private int dano2 = 2;
-	private int dano3 = 3;
+	private int dano1 = 35;
+	private int dano2 = 40;
+	private int dano3 = 55;
 	
 	Dragao(String nome, String tipo) 
 	{
