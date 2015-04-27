@@ -12,12 +12,12 @@ public class Pokemon
 		this.tipo = tipo;
 	}
 	
-	String getNome()
+	public String getNome()
 	{
 		return nome;
 	}
 	
-	int getHp()
+	public int getHp()
 	{
 		return hp;
 	}
@@ -26,6 +26,10 @@ public class Pokemon
 	{
 		if (hp - dano >= 0) hp -= dano;
 		else                hp = 0;
+	}
+	public void exibeAtaques()
+	{
+		
 	}
 	
 }
