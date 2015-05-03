@@ -64,11 +64,12 @@ public class Treinador
 					.println("Nome: " + pok.getNome() + " Hp: " + pok.getHp());
 		else
 			System.out.println("Nome: " + pok.getNome() + " Hp: " + pok.getHp()
-					+ "Ativo");
+					+ " (Ativo)");
 	}
 
 	public boolean perdeu()
 	{
+
 		for (int i = 0; i < nPok; i++)
 		{
 			if (lista[i].getHp() > 0)
