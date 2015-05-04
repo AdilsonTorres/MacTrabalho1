@@ -59,7 +59,10 @@ public class Main
 				t.listarPokemons();
 				break;
 			case 2:
-
+				int op2;
+				System.out.println("Escolher ataque:");
+				t.getAtivo().exibeAtaques();
+				op2 = scanner.nextInt();
 				break;
 			case 3:
 				t.listaPokemon(t.getAtivo());
@@ -68,18 +71,18 @@ public class Main
 				escolheAtivo(t);
 				break;
 			case 5:
-
+				t.getAtivo().curar();
 				break;
 			case 6:
 
 				break;
 			}
+			System.out.println();
 		}
-		System.out.println();
 
 	}
 
-	private static void escolheAtivo(Treinador t)
+	static void escolheAtivo(Treinador t)
 	{
 		String nome;
 		System.out.println("Selecione um pokemon: ");

@@ -11,6 +11,11 @@ public class Treinador
 	private boolean perdeu = false;
 	private Pokemon ativo;
 
+	public String getNome()
+	{
+		return nome;
+	}
+
 	public static int getnPok()
 	{
 		return nPok;
@@ -60,11 +65,11 @@ public class Treinador
 	public void listaPokemon(Pokemon pok)
 	{
 		if (!pok.equals(ativo))
-			System.out
-					.println("Nome: " + pok.getNome() + " Hp: " + pok.getHp());
+			System.out.println("Nome: " + pok.getNome() + " Hp: " + pok.getHp()
+					+ " Tipo: " + pok.getTipo());
 		else
 			System.out.println("Nome: " + pok.getNome() + " Hp: " + pok.getHp()
-					+ " (Ativo)");
+					+ " Tipo: " + pok.getTipo() + " (Ativo)");
 	}
 
 	public boolean perdeu()

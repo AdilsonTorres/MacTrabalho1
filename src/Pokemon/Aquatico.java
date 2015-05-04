@@ -2,23 +2,23 @@ package Pokemon;
 
 public class Aquatico extends Pokemon
 {
-	private String ataque1 = "Jato de agua";
-	private String ataque2 = "Nadadeira cortante";
-	private String ataque3 = "Onda do mar";
-	
-	private int dano1 = 10;
-	private int dano2 = 25;
-	private int dano3 = 40;
-	
-	public Aquatico(String nome) 
+
+	public Aquatico(String nome)
 	{
 		super(nome, "aquatico");
+		int[] dano = new int[4];
+		dano[0] = 10;
+		dano[1] = 25;
+		dano[2] = 40;
+		dano[3] = 25;
+		setDano(dano);
+
+		String[] ataque = new String[4];
+		ataque[0] = "Jato de agua";
+		ataque[1] = "Nadadeira cortante";
+		ataque[2] = "Onda do mar";
+		ataque[3] = "Investida";
+		setAtaque(ataque);
 	}
-	
-	public void exibeAtaques()
-	{
-		System.out.println("(1) " +ataque1+ ", com dano de " +dano1+ "hp.");
-		System.out.println("(2) " +ataque2+ ", com dano de " +dano2+ "hp.");
-		System.out.println("(3) " +ataque3+ ", com dano de " +dano3+ "hp.");
-	}
+
 }
