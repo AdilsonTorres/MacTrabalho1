@@ -13,6 +13,12 @@ public class Fogo extends Pokemon
 		dano[3] = 25;
 		setDano(dano);
 
+		int[] prioridade = new int[4];
+		prioridade[0] = 4;
+		prioridade[1] = 3;
+		prioridade[2] = 2;
+		prioridade[3] = 1;
+		
 		String[] ataque = new String[4];
 		ataque[0] = "Bola de fogo";
 		ataque[1] = "Cauda flamejante";

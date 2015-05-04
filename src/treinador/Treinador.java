@@ -6,9 +6,8 @@ public class Treinador
 {
 	private String nome;
 	private Pokemon[] lista = new Pokemon[6];
-	private static int nPok = 3;
+	private static int nPok = 2;
 	private int qtPok = 0;
-	private boolean perdeu = false;
 	private Pokemon ativo;
 
 	public String getNome()
@@ -50,8 +49,7 @@ public class Treinador
 
 	public void addPokemon(Pokemon pok)
 	{
-		if (qtPok < nPok)
-			lista[qtPok++] = pok;
+		if (qtPok < nPok) lista[qtPok++] = pok;
 	}
 
 	public void listarPokemons()
@@ -64,9 +62,8 @@ public class Treinador
 
 	public void listaPokemon(Pokemon pok)
 	{
-		if (!pok.equals(ativo))
-			System.out.println("Nome: " + pok.getNome() + " Hp: " + pok.getHp()
-					+ " Tipo: " + pok.getTipo());
+		if (!pok.equals(ativo)) System.out.println("Nome: " + pok.getNome()
+				+ " Hp: " + pok.getHp() + " Tipo: " + pok.getTipo());
 		else
 			System.out.println("Nome: " + pok.getNome() + " Hp: " + pok.getHp()
 					+ " Tipo: " + pok.getTipo() + " (Ativo)");
@@ -77,8 +74,7 @@ public class Treinador
 
 		for (int i = 0; i < nPok; i++)
 		{
-			if (lista[i].getHp() > 0)
-				return false;
+			if (lista[i].getHp() > 0) return false;
 		}
 		return true;
 	}
